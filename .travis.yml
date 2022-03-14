@@ -1,9 +1,9 @@
-- os: RHEL
-  dist: rhel8
-  language: python
-  arch: amd64
-  python:
+os: RHEL
+dist: rhel8
+language: python
+arch: amd64
+python:
     - "3.9-dev"  # 3.9 development branch
     - "nightly"  # nightly build
-  script:
+script:
     - python hello_world.py
