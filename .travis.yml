@@ -1,0 +1,6 @@
+language: python
+python:
+  - "3.9-dev"  # 3.9 development branch
+  - "nightly"  # nightly build
+script:
+  - python hello_world.py
