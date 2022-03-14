@@ -1,4 +1,4 @@
-os: RHEL
+os: linux
 dist: rhel8
 language: python
 arch: amd64
