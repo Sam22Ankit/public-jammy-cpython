@@ -3,7 +3,6 @@ dist: rhel8
 language: python
 arch: amd64
 python:
-    - "3.9-dev"  # 3.9 development branch
     - "nightly"  # nightly build
 script:
     - python hello_world.py
