@@ -1,4 +1,4 @@
-dist: xenial
+dist: jammy
 virt: vm
 language: python
 arch: amd64
