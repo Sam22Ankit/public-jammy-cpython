@@ -1,11 +1,91 @@
-os: RHEL
-dist: rhel8
-language: python
-arch: amd64
-python:
-    - "3.9-dev"  # 3.9 development branch
-    - "nightly"  # nightly build
-before_install:
-    - yum install -y rpm
-script:
-    - python hello_world.py
+os: linux
+jobs:
+  include:
+    - dist: jammy
+      virt: vm
+      language: python
+      arch: amd64
+      python:
+          - "3.9-dev"  # 3.9 development branch
+          - "nightly"  # nightly build
+      before_install:
+          - yum install -y rpm
+      script:
+          - python hello_world.py
+    - dist: jammy
+      virt: lxd
+      language: python
+      arch: amd64
+      python:
+          - "3.9-dev"  # 3.9 development branch
+          - "nightly"  # nightly build
+      before_install:
+          - yum install -y rpm
+      script:
+          - python hello_world.py
+    - dist: xenial
+      virt: vm
+      language: python
+      arch: amd64
+      python:
+          - "3.9-dev"  # 3.9 development branch
+          - "nightly"  # nightly build
+      before_install:
+          - yum install -y rpm
+      script:
+          - python hello_world.py
+    - dist: xenial
+      virt: lxd
+      language: python
+      arch: amd64
+      python:
+          - "3.9-dev"  # 3.9 development branch
+          - "nightly"  # nightly build
+      before_install:
+          - yum install -y rpm
+      script:
+          - python hello_world.py
+    - dist: bionic
+      virt: vm
+      language: python
+      arch: amd64
+      python:
+          - "3.9-dev"  # 3.9 development branch
+          - "nightly"  # nightly build
+      before_install:
+          - yum install -y rpm
+      script:
+          - python hello_world.py
+    - dist: bionic
+      virt: lxd
+      language: python
+      arch: amd64
+      python:
+          - "3.9-dev"  # 3.9 development branch
+          - "nightly"  # nightly build
+      before_install:
+          - yum install -y rpm
+      script:
+          - python hello_world.py
+    - dist: focal
+      virt: vm
+      language: python
+      arch: amd64
+      python:
+          - "3.9-dev"  # 3.9 development branch
+          - "nightly"  # nightly build
+      before_install:
+          - yum install -y rpm
+      script:
+          - python hello_world.py
+    - dist: focal
+      virt: lxd
+      language: python
+      arch: amd64
+      python:
+          - "3.9-dev"  # 3.9 development branch
+          - "nightly"  # nightly build
+      before_install:
+          - yum install -y rpm
+      script:
+          - python hello_world.py
